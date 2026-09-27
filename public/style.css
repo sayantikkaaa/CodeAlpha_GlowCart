@@ -1,0 +1,172 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff5f8;
+  color: #333;
+}
+
+header {
+  background: #ff4f87;
+  color: white;
+  padding: 22px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+header h1 {
+  font-size: 28px;
+}
+
+nav {
+  display: flex;
+  gap: 22px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #ffe0eb, #fff5f8);
+}
+
+.hero h2 {
+  font-size: 38px;
+  color: #e73570;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.btn,
+button {
+  display: inline-block;
+  background: #ff4f87;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 25px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+button:hover,
+.btn:hover {
+  background: #d92e67;
+}
+
+.products {
+  padding: 65px 8%;
+  text-align: center;
+}
+
+.products h2,
+.cart-section h2 {
+  color: #e73570;
+  margin-bottom: 35px;
+  font-size: 30px;
+}
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.product-card {
+  width: 260px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px #00000012;
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  margin: 18px 0 10px;
+}
+
+.product-card p {
+  color: #e73570;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.cart-section {
+  padding: 65px 20px;
+  background: #ffe5ee;
+  text-align: center;
+  min-height: 300px;
+}
+
+.cart-item {
+  background: white;
+  max-width: 500px;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-item button {
+  padding: 8px 15px;
+}
+
+.cart-section h3 {
+  margin: 25px 0;
+}
+
+footer {
+  background: #ff4f87;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h2 {
+    font-size: 29px;
+  }
+}
